@@ -1,6 +1,8 @@
-# 🧨 Bonanza Labs CLI
+# bonanza labs cli 
 
-One command for all Bonanza Labs AI tools.
+🧨 CLI for all Bonanza Labs tools
+
+Part of [Bonanza Labs](https://github.com/c6zks4gssn-droid) — open source AI tools for builders.
 
 ## Install
 
@@ -8,37 +10,22 @@ One command for all Bonanza Labs AI tools.
 pip install bonanza-labs
 ```
 
-## Usage
+## Quick Start
 
 ```bash
-# Generate a video
-bonanza video "AI Agents Are the Future" --style viral --format 9:16
-
-# Check repo health
-bonanza doctor openclaw/openclaw
-
-# Agent wallet
-bonanza wallet create --chain solana --budget 100
-bonanza wallet balance
-bonanza wallet analytics
+bonanza-labs --help
 ```
 
-## Commands
+## Features
 
-| Command | Description |
-|---------|-------------|
-| `bonanza video` | Generate videos from topics (FrameForge) |
-| `bonanza doctor` | Check repository health (Fork Doctor) |
-| `bonanza wallet` | Manage AI agent payments (Agent Wallet) |
+- Open source (Apache 2.0)
+- CLI + REST API
+- Built for AI agents
 
-## Optional Dependencies
+## Documentation
 
-```bash
-pip install bonanza-labs[video]    # Edge-TTS for voiceover
-pip install bonanza-labs[doctor]   # PyYAML + GitPython
-pip install bonanza-labs[wallet]   # Solana + Web3
-```
+Full docs at [bonanza-labs.tiiny.site](https://bonanza-labs.tiiny.site)
 
 ## License
 
-Apache 2.0 — © Bonanza Labs
+Apache License 2.0
