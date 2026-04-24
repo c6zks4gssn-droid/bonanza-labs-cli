@@ -1,0 +1,17 @@
+click>=8.0
+rich>=13.0
+requests>=2.28
+
+[doctor]
+pyyaml>=6.0
+gitpython>=3.1
+
+[poly]
+py-clob-client>=0.34
+
+[video]
+edge-tts>=6.1
+
+[wallet]
+solana>=0.30
+web3>=6.0

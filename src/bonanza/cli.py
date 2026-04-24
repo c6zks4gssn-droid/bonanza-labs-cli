@@ -8,7 +8,7 @@ console = Console()
 
 
 @click.group()
-@click.version_option(version="0.1.0", prog_name="bonanza")
+@click.version_option(version="0.2.0", prog_name="bonanza")
 def main():
     """🧨 Bonanza Labs — AI tools for builders."""
     console.print("[bold violet]🧨 Bonanza Labs[/] — AI tools for builders", style="")
@@ -77,6 +77,13 @@ def wallet(action, chain, budget):
     except ImportError:
         console.print("[yellow]⚠️ Wallet dependencies not installed. Run:[/] pip install bonanza-labs[wallet]")
 
+
+# Polymarket commands
+try:
+    from bonanza.commands.poly import poly
+    main.add_command(poly)
+except ImportError:
+    pass
 
 if __name__ == "__main__":
     main()

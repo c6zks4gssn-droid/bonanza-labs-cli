@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: bonanza-labs
+Version: 0.2.0
+Summary: 🧨 Bonanza Labs CLI — AI tools for builders
+Author-email: Bonanza Labs <passiveassets@proton.me>
+License-Expression: Apache-2.0
+Keywords: ai,video,repo-health,agent-wallet,polymarket,cli
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.0
+Requires-Dist: rich>=13.0
+Requires-Dist: requests>=2.28
+Provides-Extra: video
+Requires-Dist: edge-tts>=6.1; extra == "video"
+Provides-Extra: doctor
+Requires-Dist: pyyaml>=6.0; extra == "doctor"
+Requires-Dist: gitpython>=3.1; extra == "doctor"
+Provides-Extra: wallet
+Requires-Dist: solana>=0.30; extra == "wallet"
+Requires-Dist: web3>=6.0; extra == "wallet"
+Provides-Extra: poly
+Requires-Dist: py-clob-client>=0.34; extra == "poly"
+
+# 🧨 Bonanza Labs CLI
+
+One command for all Bonanza Labs AI tools.
+
+## Install
+
+```bash
+pip install bonanza-labs
+```
+
+## Usage
+
+```bash
+# Generate a video
+bonanza video "AI Agents Are the Future" --style viral --format 9:16
+
+# Check repo health
+bonanza doctor openclaw/openclaw
+
+# Agent wallet
+bonanza wallet create --chain solana --budget 100
+bonanza wallet balance
+bonanza wallet analytics
+```
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `bonanza video` | Generate videos from topics (FrameForge) |
+| `bonanza doctor` | Check repository health (Fork Doctor) |
+| `bonanza wallet` | Manage AI agent payments (Agent Wallet) |
+
+## Optional Dependencies
+
+```bash
+pip install bonanza-labs[video]    # Edge-TTS for voiceover
+pip install bonanza-labs[doctor]   # PyYAML + GitPython
+pip install bonanza-labs[wallet]   # Solana + Web3
+```
+
+## License
+
+Apache 2.0 — © Bonanza Labs
