@@ -33,3 +33,6 @@ poly = ["py-clob-client>=0.34"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.urls]
+Logo = "https://bonanza-labs.tiiny.site/bonanza-labs-logo-256.png"
